@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name" translatable="false">Android Quiz</string>
+
+    <string name="result_toast_message">Quiz finished. You answered <xliff xliff:id="score">%1$d</xliff> out of<xliff xliff:id="total_score">%2$d</xliff>questions correct.</string>
+
+    <string name="button_start_quiz">Start Quiz</string>
+    <string name="button_next">Next</string>
+
+    <string name="edit_text_hint_answer">Enter your answer here</string>
+
+    <string name="image_view_cd_android_logo">Android Logo</string>
+
+    <string name="text_view_welcome">Welcome to Android Quiz</string>
+    <string name="text_view_description">This quiz consists of 10 questions related to Android Development in a variety of formats.</string>
+    <string name="text_view_developed_by">Developed by Timotius Oktorio</string>
+
+</resources>

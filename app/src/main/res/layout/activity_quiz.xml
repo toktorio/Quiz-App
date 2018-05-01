@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            tools:text="Who are the inventors of Android?" />
+
+        <EditText
+            android:id="@+id/answer_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_text_hint_answer"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/radio_button_A"
+                style="@style/MultipleChoices"
+                tools:text="Andy Rubin" />
+
+            <RadioButton
+                android:id="@+id/radio_button_B"
+                style="@style/MultipleChoices"
+                tools:text="Steve Jobs" />
+
+            <RadioButton
+                android:id="@+id/radio_button_C"
+                style="@style/MultipleChoices"
+                tools:text="Bill Gates" />
+
+            <RadioButton
+                android:id="@+id/radio_button_D"
+                style="@style/MultipleChoices"
+                tools:text="Mark Zuckerberg" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/check_box_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/check_box_A"
+                style="@style/MultipleChoices"
+                tools:text="Andy Rubin" />
+
+            <CheckBox
+                android:id="@+id/check_box_B"
+                style="@style/MultipleChoices"
+                tools:text="Rich Miner" />
+
+            <CheckBox
+                android:id="@+id/check_box_C"
+                style="@style/MultipleChoices"
+                tools:text="Nick Sears" />
+
+            <CheckBox
+                android:id="@+id/check_box_D"
+                style="@style/MultipleChoices"
+                tools:text="Steve Jobs" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="checkAnswer"
+                android:text="@string/button_next"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
